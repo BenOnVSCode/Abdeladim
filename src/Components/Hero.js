@@ -25,15 +25,13 @@ const Hero = () => {
                         <motion.span> 👇 </motion.span>
                         <motion.p>Meet Abdeladim</motion.p>
                     </motion.div>
-                        <motion.div
+                    <motion.div
                     className="scroll-icon">
                         <motion.span
                             variants={scroll}
                             initial="hidden"
                             animate="visible"
                         className="scroll-icon-ab">
-
-
                         </motion.span>
                     </motion.div>
                     

@@ -76,6 +76,8 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 header ul a {
@@ -111,6 +113,7 @@ header ul a {
 
 .meet span {
   margin-right: .5em;
+  margin-top: .8rem;
 }
 
 .scroll {
@@ -327,6 +330,37 @@ section {
   padding: .6rem 1.1rem;
 }
 
+@media only screen and (max-width: 445px) {
+  .links {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .links {
+    font-size: 10px;
+  }
+  .hero {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 332px) {
+  .links {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (max-width: 527px) {
   .footer-container .content h1, .footer-container .content a {
     font-size: 1.2rem;
@@ -457,6 +491,24 @@ section {
   }
 }
 
+@media only screen and (max-width: 1050px) {
+  .scroll-icon {
+    margin: 0 auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .inner {
+    padding: 2rem 0;
+  }
+}
+
 @media only screen and (min-width: 1250px) {
   header {
     padding: 2em 2em 2em 10em;
@@ -484,34 +536,6 @@ section {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
-  }
-}
-
-.circle {
-  animation: circleAnim 1s infinite alternate-reverse;
-}
-
-@-webkit-keyframes circleAnim {
-  from {
-    -webkit-transform: translate(262px, 798px);
-            transform: translate(262px, 798px);
-    z-index: 5;
-  }
-  to {
-    -webkit-transform: translate(262px, 830px);
-            transform: translate(262px, 830px);
-  }
-}
-
-@keyframes circleAnim {
-  from {
-    -webkit-transform: translate(262px, 798px);
-            transform: translate(262px, 798px);
-    z-index: 5;
-  }
-  to {
-    -webkit-transform: translate(262px, 830px);
-            transform: translate(262px, 830px);
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -51,6 +51,7 @@ img {width: 100%;}
     
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -63,6 +64,7 @@ header {
 
     ul {
         display: flex;
+        transition: all 0.3s ease ;
 
         a {
             display: block;
@@ -95,8 +97,8 @@ header {
     justify-content: center;
 
     span {
-        
         margin-right: .5em;
+        margin-top: .8rem ;
     }
 }
 
@@ -254,6 +256,8 @@ section {
     color: #E5D5FA;
 }
 
+   
+
 .btns {
     margin-top: -2rem ;
 
@@ -281,6 +285,40 @@ section {
 
 
 
+
+@media only screen and (max-width: 445px) {
+
+    
+    .links {
+        font-size: 12px ;
+        margin-top: 5px  ;
+        
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .links {
+        font-size: 10px ;
+         
+    }
+
+    .hero {
+        width: 100vw ;
+        display: flex;
+        justify-content: center ;
+        align-items: center;
+
+    }
+}
+
+@media only screen and (max-width: 332px) {
+
+    
+    .links {
+        margin-top: 0  ;
+         
+    }
+}
 @media only  screen and (max-width:527px ) {
     .footer-container {
          .content {
@@ -412,6 +450,23 @@ section {
         float: right;
         max-width: 500px;
     }
+
+    
+}
+@media only screen and (max-width: 1050px) {
+    .scroll-icon {
+        margin: 0 auto ;
+        text-align: center;
+        align-items: center;
+        justify-self: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .inner {
+        padding: 2rem 0 ;
+    }
+    
 }
 
 
@@ -447,16 +502,5 @@ section {
 
 }  
 
-.circle {
-    animation: circleAnim 1s infinite alternate-reverse;
-}
 
-@keyframes circleAnim {
-    from {
-        transform: translate(262px, 798px);
-        z-index: 5;
-    }
-    to {
-        transform: translate(262px, 830px);
-    }
-}
+ 
