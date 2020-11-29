@@ -1,24 +1,15 @@
-import React, {useEffect} from 'react'
-import {motion, useAnimation} from 'framer-motion'
+import React from 'react'
+import {motion} from 'framer-motion'
 import '../Styles/main.css'
 import {FiGithub} from 'react-icons/fi'
 import {AiOutlineInstagram, AiOutlineMail} from 'react-icons/ai'
-import { useInView } from "react-intersection-observer"
 import { Link } from 'react-scroll'
-import { Header, Hero, NavLinks, SocialMediaIcons,  Svg1, Title, Svg2, Svg3, Svg4, featuredTitle, featuredName, featuredDes, Skill,  Svg5, Svg6, Svg7, scroll, featuredImg, ProjectImg, ProjectTitle, ProjectName, ProjectDes } from '../Styles/animate'
+import { Header, NavLinks, SocialMediaIcons } from '../Styles/animate'
 
 const Navbar = () => {
 
 
-    const controls = useAnimation();
-    const [ref, inView] = useInView();
-
-    
-    useEffect(() => {
-        if(inView) {
-            controls.start("visible")
-        }
-    }, [controls, inView]);
+   
 
 
 
