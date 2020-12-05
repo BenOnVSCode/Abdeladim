@@ -84,14 +84,6 @@ export const Projects = () => {
                         className="featured-title">
                             Restaurant template  !
                         </motion.p>
-                        <motion.p
-                            ref={ref8}
-                            animate={controls8}
-                            initial="hidden"
-                            variants={ProjectDes}
-                        className="featured-desc">
-                            Responsive restaurant template with styled-components  . 
-                        </motion.p>
                         <motion.div
                             ref={ref8}
                             animate={controls8}
@@ -140,14 +132,7 @@ export const Projects = () => {
                         className="featured-title">
                             Virtual Banking template  !
                         </motion.p>
-                        <motion.p
-                            ref={ref7}
-                            animate={controls7}
-                            initial="hidden"
-                            variants={ProjectDes}
-                        className="featured-desc">
-                            Virtual Banking template with react, react-scroll, styled-components and some hooks . 
-                        </motion.p>
+            
                         <motion.div
                             ref={ref7}
                             animate={controls7}
@@ -196,14 +181,7 @@ export const Projects = () => {
                         className="featured-title">
                             Pepsi Landing Page  ! 
                         </motion.p>
-                        <motion.p
-                            ref={ref3}
-                            animate={controls3}
-                            initial="hidden"
-                            variants={ProjectDes}
-                        className="featured-desc">
-                            Pepsi landing page with react and react hooks and some transitions.
-                        </motion.p>
+                        
                         <motion.div
                             ref={ref3}
                             animate={controls3}
@@ -253,14 +231,7 @@ export const Projects = () => {
                         className="featured-title">
                             Landing Page ! 
                         </motion.p>
-                        <motion.p
-                            ref={ref5}
-                            animate={controls5}
-                            initial="hidden"
-                            variants={ProjectDes}
-                        className="featured-desc">
-                            A simple landing page with react, styled-components (Dark and Light mode).
-                        </motion.p>
+                        
                         <motion.div
                             ref={ref5}
                             animate={controls5}
@@ -309,14 +280,7 @@ export const Projects = () => {
                         className="featured-title">
                             Cryptocurrency Tracker !
                         </motion.p>
-                        <motion.p
-                            ref={ref6}
-                            animate={controls6}
-                            initial="hidden"
-                            variants={ProjectDes}
-                        className="featured-desc">
-                             Cryptocurrency Finance Price Tracker app with react and  API for getting the information. Also, I use some React hooks (useState, useEffect...). You can search in the input field.  . 
-                        </motion.p>
+                        
                         <motion.div
                             ref={ref6}
                             animate={controls6}
@@ -364,14 +328,6 @@ export const Projects = () => {
                             variants={ProjectName}
                         className="featured-title">
                             Todo App !
-                        </motion.p>
-                        <motion.p
-                            ref={ref4}
-                            animate={controls4}
-                            initial="hidden"
-                            variants={ProjectDes}
-                        className="featured-desc">
-                            Basic todo react app with react hooks you can add, delete and edit the todo. 
                         </motion.p>
                         <motion.div
                              ref={ref4}

@@ -305,7 +305,7 @@ section {
 }
 
 .btns {
-  margin-top: -2rem;
+  margin-top: 1rem;
 }
 
 .btns .btn {
@@ -381,9 +381,15 @@ section {
         grid-template-columns: 40% auto;
   }
   .left, .portfolio-left {
-    display: -ms-grid;
-    display: grid;
-    place-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .right {
     margin-left: 2em;
@@ -507,6 +513,15 @@ section {
   .inner {
     padding: 2rem 0;
   }
+  .portfolio-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -536,6 +551,28 @@ section {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .portfolio-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+  .portfolio-container div {
+    margin: 1rem 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

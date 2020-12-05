@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     height: 100vh;
     margin: 0;
@@ -156,6 +157,7 @@ section {
     background: #FF64CB;
 }
 
+
 .skills-container ul li {
 
     background: white;
@@ -259,7 +261,7 @@ section {
    
 
 .btns {
-    margin-top: -2rem ;
+    margin-top: 1rem ;
 
     .btn {
         padding: .5rem 1rem;
@@ -345,8 +347,9 @@ section {
     }
 
     .left, .portfolio-left {
-        display: grid;
-        place-content: center;
+        display: flex ;
+        justify-content: flex-start ;
+        align-items: center ;
     }
 
     .right {
@@ -466,7 +469,10 @@ section {
     .inner {
         padding: 2rem 0 ;
     }
-    
+    .portfolio-container {
+        display: flex ;
+        flex-direction: column  ;
+    }
 }
 
 
@@ -504,3 +510,16 @@ section {
 
 
  
+@media only  screen and (max-width: 1050px) {
+    .portfolio-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto ;
+
+        div {
+            margin: 1rem 0 ;
+        }
+    }
+}
